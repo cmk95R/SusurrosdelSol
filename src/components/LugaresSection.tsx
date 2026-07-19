@@ -6,32 +6,32 @@ import Image from "next/image";
 
 const lugares = [
   {
-    src: "https://images.unsplash.com/photo-1587595431973-160d0d94add1?q=80&w=800&auto=format&fit=crop",
+    src: "/lugares/hornocal.jpg",
     title: "El Hornocal",
     desc: "Los 14 colores a 25 minutos en auto.",
   },
   {
-    src: "https://images.unsplash.com/photo-1589476996269-c92b7c523026?q=80&w=800&auto=format&fit=crop",
+    src: "/lugares/Humahuaca.webp",
     title: "Quebrada de Humahuaca",
     desc: "Patrimonio de la Humanidad a tu alcance.",
   },
   {
-    src: "https://images.unsplash.com/photo-1587398393592-c8c75a221062?q=80&w=800&auto=format&fit=crop",
+    src: "/lugares/pruma.webp",
     title: "Purmamarca",
     desc: "Cerro de los Siete Colores a media hora.",
   },
   {
-    src: "https://images.unsplash.com/photo-1518182170546-0766bd6f6a56?q=80&w=800&auto=format&fit=crop",
+    src: "/lugares/paseos.webp",
     title: "Paseos de la Quebrada",
     desc: "Caminatas, artesanías y cultura andina.",
   },
   {
-    src: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800&auto=format&fit=crop",
+    src: "/lugares/Salinas.jpg",
     title: "Salinas Grandes",
     desc: "Desierto de sal a 1 hora de viaje.",
   },
   {
-    src: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=800&auto=format&fit=crop",
+    src: "/lugares/tilcara.jpg",
     title: "Tilcara",
     desc: "Pucará histórico y feria artesanal.",
   },
