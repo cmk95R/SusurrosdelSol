@@ -3,6 +3,7 @@
 import { Box, Container, Typography, Card, CardContent } from "@mui/material";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import TiltCard from "./TiltCard";
 
 const lugares = [
   {
@@ -101,64 +102,66 @@ export default function LugaresSection() {
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.12, duration: 0.5 }}
-              whileHover={{ y: -8 }}
             >
-              <Card
-                sx={{
-                  overflow: "hidden",
-                  transition: "box-shadow 0.3s ease",
-                  "&:hover": {
-                    boxShadow: "0 20px 60px rgba(44, 24, 16, 0.18)",
-                    "& .img": { transform: "scale(1.12)" },
-                    "& .overlay": { opacity: 1 },
-                  },
-                }}
-              >
-                <Box
+              <TiltCard>
+                <Card
                   sx={{
-                    position: "relative",
                     overflow: "hidden",
-                    aspectRatio: "16/10",
+                    transition: "box-shadow 0.3s ease",
+                    cursor: "pointer",
+                    "&:hover": {
+                      boxShadow: "0 20px 60px rgba(44, 24, 16, 0.18)",
+                      "& .img": { transform: "scale(1.12)" },
+                      "& .overlay": { opacity: 1 },
+                    },
                   }}
                 >
-                  <Image
-                    src={lugar.src}
-                    alt={lugar.title}
-                    fill
-                    className="img"
-                    style={{
-                      objectFit: "cover",
-                      transition: "transform 0.7s ease",
-                    }}
-                    sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
-                  />
                   <Box
-                    className="overlay"
                     sx={{
-                      position: "absolute",
-                      inset: 0,
-                      background: "linear-gradient(to top, rgba(44,24,16,0.6) 0%, transparent 50%)",
-                      opacity: 0,
-                      transition: "opacity 0.4s ease",
-                      display: "flex",
-                      alignItems: "flex-end",
-                      p: 2,
+                      position: "relative",
+                      overflow: "hidden",
+                      aspectRatio: "16/10",
                     }}
                   >
-                    <Typography variant="caption" sx={{ color: "#FFF8F0", fontWeight: 600 }}>
+                    <Image
+                      src={lugar.src}
+                      alt={lugar.title}
+                      fill
+                      className="img"
+                      style={{
+                        objectFit: "cover",
+                        transition: "transform 0.7s ease",
+                      }}
+                      sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
+                    />
+                    <Box
+                      className="overlay"
+                      sx={{
+                        position: "absolute",
+                        inset: 0,
+                        background: "linear-gradient(to top, rgba(44,24,16,0.6) 0%, transparent 50%)",
+                        opacity: 0,
+                        transition: "opacity 0.4s ease",
+                        display: "flex",
+                        alignItems: "flex-end",
+                        p: 2,
+                      }}
+                    >
+                      <Typography variant="caption" sx={{ color: "#FFF8F0", fontWeight: 600 }}>
+                        {lugar.desc}
+                      </Typography>
+                    </Box>
+                  </Box>
+                  <CardContent sx={{ p: 3 }}>
+                    <Typography variant="h6" sx={{ color: "text.primary", fontWeight: 700, mb: 0.5 }}>
+                      {lugar.title}
+                    </Typography>
+                    <Typography variant="body2" sx={{ color: "text.secondary" }}>
                       {lugar.desc}
                     </Typography>
-                  </Box>
-                </Box>
-                <CardContent sx={{ p: 3 }}>
-                  <Typography variant="h6" sx={{ color: "text.primary", fontWeight: 700, mb: 0.5 }}>
-                    {lugar.title}
-                  </Typography>
-                  <Typography variant="body2" sx={{ color: "text.secondary" }}>
-                    {lugar.desc}
-                  </Typography>
-                </CardContent>
-              </Card>
+                  </CardContent>
+                </Card>
+              </TiltCard>
             </motion.div>
           ))}
         </Box>
