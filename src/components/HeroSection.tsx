@@ -100,7 +100,7 @@ export default function HeroSection() {
                 letterSpacing: "0.04em",
               }}
             >
-              Susurros
+              Hostal
               <br />
               <Box
                 component="span"
@@ -114,7 +114,7 @@ export default function HeroSection() {
                   opacity: 0.95,
                 }}
               >
-                del Sol
+                Milenio
               </Box>
             </Typography>
           </motion.div>

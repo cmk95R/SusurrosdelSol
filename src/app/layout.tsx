@@ -33,7 +33,7 @@ const greatVibes = Great_Vibes({
 });
 
 export const metadata: Metadata = {
-  title: "Susurros del Sol | Casa de alquiler en Humahuaca",
+  title: "Hostal Milenio | Casa de alquiler en Humahuaca",
   description:
     "Casa para 6 personas a 2 cuadras del centro de Humahuaca, Jujuy. 2 habitaciones, cocina equipada, baño y living. $30.000 por noche.",
 };

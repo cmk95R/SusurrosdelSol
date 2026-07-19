@@ -40,7 +40,7 @@ export default function CTASection() {
 
   const confirmar = () => {
     if (!desde || !hasta) return;
-    const texto = `Hola! Quiero reservar *Susurros del Sol* en Humahuaca.\n\n📅 Fechas:\nLlegada: ${formatearFecha(desde)}\nSalida: ${formatearFecha(hasta)}\n🌙 Noches: ${noches}\n\n¿Hay disponibilidad?`;
+    const texto = `Hola! Quiero reservar *Hostal Milenio* en Humahuaca.\n\n📅 Fechas:\nLlegada: ${formatearFecha(desde)}\nSalida: ${formatearFecha(hasta)}\n🌙 Noches: ${noches}\n\n¿Hay disponibilidad?`;
     const url = `https://wa.me/541159764240?text=${encodeURIComponent(texto)}`;
     window.open(url, "_blank");
   };

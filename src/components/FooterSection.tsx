@@ -32,7 +32,7 @@ export default function FooterSection() {
               mb: 1,
             }}
           >
-            Susurros del Sol
+            Hostal Milenio
           </Typography>
           <Typography variant="body2" sx={{ color: "rgba(255,248,240,0.7)", mb: 3 }}>
             Casa de alquiler en Humahuaca, Jujuy · 2 cuadras del centro
@@ -69,7 +69,7 @@ export default function FooterSection() {
           <Divider sx={{ borderColor: "rgba(255,248,240,0.15)", mb: 3 }} />
 
           <Typography variant="caption" sx={{ color: "rgba(255,248,240,0.5)", letterSpacing: "0.05em" }}>
-            © {new Date().getFullYear()} Susurros del Sol · Humahuaca, Jujuy · Argentina
+            © {new Date().getFullYear()} Hostal Milenio · Humahuaca, Jujuy · Argentina
           </Typography>
         </motion.div>
       </Container>

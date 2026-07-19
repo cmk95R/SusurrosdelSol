@@ -84,7 +84,7 @@ export default function Navbar() {
                   letterSpacing: "0.02em",
                 }}
               >
-                Susurros del Sol
+                Hostal Milenio
               </Box>
             </Box>
 
@@ -176,7 +176,7 @@ export default function Navbar() {
               mb: 3,
             }}
           >
-            Susurros del Sol
+            Hostal Milenio
           </Typography>
           <List>
             {navLinks.map((link) => (
