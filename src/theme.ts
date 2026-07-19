@@ -16,6 +16,18 @@ let theme = createTheme({
       dark: "#A67C10",
       contrastText: "#2C1810",
     },
+    info: {
+      main: "#5B8DB8",
+      light: "#8BB4D4",
+      dark: "#3A6B8F",
+      contrastText: "#FFF8F0",
+    },
+    success: {
+      main: "#6B8E5E",
+      light: "#8FB380",
+      dark: "#4E6E43",
+      contrastText: "#FFF8F0",
+    },
     background: {
       default: "#F5E6D3",
       paper: "#FFF8F0",

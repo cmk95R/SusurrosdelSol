@@ -100,7 +100,7 @@ export default function CTASection() {
               style={{ display: "inline-block" }}
             >
               <CalendarMonthIcon
-                sx={{ fontSize: 56, color: "secondary.main", mb: 2 }}
+                sx={{ fontSize: { xs: 40, md: 56 }, color: "secondary.main", mb: 2 }}
               />
             </motion.div>
 
@@ -134,6 +134,12 @@ export default function CTASection() {
           </Box>
 
           {/* Booking Card */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.96 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
           <Paper
             elevation={0}
             sx={{
@@ -150,7 +156,7 @@ export default function CTASection() {
             <Box
               sx={{
                 display: "grid",
-                gridTemplateColumns: "1fr 1fr",
+                gridTemplateColumns: { xs: "1fr", sm: "1fr 1fr" },
                 gap: 2,
                 mb: 3,
               }}
@@ -379,9 +385,9 @@ export default function CTASection() {
                       : "rgba(255, 248, 240, 0.1)",
                     color: fechasListas ? "#fff" : "rgba(255,248,240,0.4)",
                     fontWeight: 700,
-                    fontSize: "1.15rem",
-                    py: 2,
-                    px: 5,
+                    fontSize: { xs: "1rem", md: "1.15rem" },
+                    py: { xs: 1.5, md: 2 },
+                    px: { xs: 3, md: 5 },
                     borderRadius: 3,
                     fontFamily: "'Airbnb Cereal', sans-serif",
                     letterSpacing: "0.02em",
@@ -410,6 +416,7 @@ export default function CTASection() {
               </motion.div>
             </Box>
           </Paper>
+          </motion.div>
 
           {/* Footer */}
           <Fade in>

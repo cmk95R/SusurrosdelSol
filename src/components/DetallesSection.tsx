@@ -10,12 +10,12 @@ import GroupIcon from "@mui/icons-material/Group";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 const detalles = [
-  { icon: <BedIcon sx={{ fontSize: 40 }} />, title: "2 Habitaciones", desc: "Capacidad para descansar cómodamente." },
-  { icon: <KitchenIcon sx={{ fontSize: 40 }} />, title: "Cocina equipada", desc: "Todo lo necesario para cocinar durante tu estadía." },
-  { icon: <BathtubIcon sx={{ fontSize: 40 }} />, title: "Baño completo", desc: "Con agua caliente y todos los servicios." },
-  { icon: <WeekendIcon sx={{ fontSize: 40 }} />, title: "Living", desc: "Espacio de relax para disfrutar después del paseo." },
-  { icon: <GroupIcon sx={{ fontSize: 40 }} />, title: "6 Huéspedes", desc: "Ideal para familias o grupos de amigos." },
-  { icon: <LocationOnIcon sx={{ fontSize: 40 }} />, title: "2 cuadras del centro", desc: "Cerca de todo, lejos del ruido." },
+  { icon: <BedIcon sx={{ fontSize: { xs: 32, md: 40 } }} />, title: "2 Habitaciones", desc: "Capacidad para descansar cómodamente." },
+  { icon: <KitchenIcon sx={{ fontSize: { xs: 32, md: 40 } }} />, title: "Cocina equipada", desc: "Todo lo necesario para cocinar durante tu estadía." },
+  { icon: <BathtubIcon sx={{ fontSize: { xs: 32, md: 40 } }} />, title: "Baño completo", desc: "Con agua caliente y todos los servicios." },
+  { icon: <WeekendIcon sx={{ fontSize: { xs: 32, md: 40 } }} />, title: "Living", desc: "Espacio de relax para disfrutar después del paseo." },
+  { icon: <GroupIcon sx={{ fontSize: { xs: 32, md: 40 } }} />, title: "6 Huéspedes", desc: "Ideal para familias o grupos de amigos." },
+  { icon: <LocationOnIcon sx={{ fontSize: { xs: 32, md: 40 } }} />, title: "2 cuadras del centro", desc: "Cerca de todo, lejos del ruido." },
 ];
 
 export default function DetallesSection() {
@@ -95,7 +95,7 @@ export default function DetallesSection() {
                   },
                 }}
               >
-                <CardContent sx={{ p: 4 }}>
+                <CardContent sx={{ p: { xs: 2, md: 4 } }}>
                   <Box sx={{ color: "primary.main", mb: 2 }}>{item.icon}</Box>
                   <Typography variant="h6" sx={{ color: "text.primary", mb: 1, fontWeight: 700 }}>
                     {item.title}

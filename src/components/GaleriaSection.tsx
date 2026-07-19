@@ -160,13 +160,13 @@ export default function GaleriaSection() {
           },
         }}
       >
-        <Box sx={{ position: "relative", textAlign: "center", p: 0 }}>
+        <Box sx={{ position: "relative", textAlign: "center", p: { xs: 1, md: 2 } }}>
           <IconButton
             onClick={() => setOpen(false)}
             sx={{
               position: "absolute",
-              top: 16,
-              right: 16,
+              top: { xs: 8, md: 16 },
+              right: { xs: 8, md: 16 },
               zIndex: 10,
               color: "#fff",
               backgroundColor: "rgba(0,0,0,0.4)",
@@ -175,7 +175,7 @@ export default function GaleriaSection() {
           >
             <CloseIcon />
           </IconButton>
-          <Box sx={{ position: "relative", width: "100%", aspectRatio: "16/10", maxHeight: "80vh" }}>
+          <Box sx={{ position: "relative", width: "100%", aspectRatio: "16/10", maxHeight: { xs: "60vh", md: "80vh" } }}>
             <Image
               src={fotos[selected].src}
               alt={fotos[selected].label}

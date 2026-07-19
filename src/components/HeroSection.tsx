@@ -22,8 +22,8 @@ export default function HeroSection() {
       ref={ref}
       sx={{
         position: "relative",
-        height: "100vh",
-        minHeight: 700,
+        height: "100dvh",
+        minHeight: { xs: 500, sm: 600, md: 700 },
         overflow: "hidden",
         display: "flex",
         alignItems: "center",
@@ -57,7 +57,7 @@ export default function HeroSection() {
         />
       </motion.div>
 
-      <Container maxWidth="lg" sx={{ position: "relative", zIndex: 2, textAlign: "center" }}>
+      <Container maxWidth="lg" sx={{ position: "relative", zIndex: 2, textAlign: "center", px: { xs: 2, md: 3 } }}>
         <motion.div style={{ opacity, y }}>
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}

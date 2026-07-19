@@ -80,7 +80,7 @@ export default function Navbar() {
                 sx={{
                   fontFamily: "'Airbnb Cereal', sans-serif",
                   fontWeight: 700,
-                  fontSize: "1.5rem",
+                  fontSize: { xs: "1.15rem", md: "1.5rem" },
                   letterSpacing: "0.02em",
                 }}
               >
